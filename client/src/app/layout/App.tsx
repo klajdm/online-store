@@ -1,8 +1,12 @@
+import { Typography } from "@mui/material";
+import Catalog from "../../features/catalog/catalog";
+
 function App() {
   return (
-    <div>
-      <h1>Re-Store</h1>
-    </div>
+    <>
+      <Typography variant="h1">Re-Store</Typography>
+      <Catalog />
+    </>
   );
 }
 
