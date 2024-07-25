@@ -1,2 +1,2 @@
 # ReStore
- Online store
+ Online store.
