@@ -1,11 +1,15 @@
-import { Typography } from "@mui/material";
-import Catalog from "../../features/catalog/catalog";
+import { Container, CssBaseline } from "@mui/material";
+import Catalog from "../../features/catalog/Catalog";
+import Header from "./Header";
 
 function App() {
   return (
     <>
-      <Typography variant="h1">Re-Store</Typography>
-      <Catalog />
+      <CssBaseline />
+      <Header />
+      <Container>
+        <Catalog />{" "}
+      </Container>
     </>
   );
 }
