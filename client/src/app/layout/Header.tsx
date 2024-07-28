@@ -42,7 +42,7 @@ const navStyles = {
 
 export default function Header({ darkMode, handleThemeChange }: Props) {
   return (
-    <AppBar position="static" sx={{ mb: 4 }}>
+    <AppBar position="sticky" sx={{ mb: 4 }}>
       <Toolbar
         sx={{
           display: "flex",
