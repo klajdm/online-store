@@ -17,6 +17,7 @@ import { LoadingButton } from "@mui/lab";
 import { useStoreContext } from "../../app/context/StoreContext";
 import agent from "../../app/api/agent";
 import { Link } from "react-router-dom";
+import BasketSummary from "./BasketSummary";
 
 export default function BasketPage() {
   const { basket, setBasket, removeItem } = useStoreContext();
@@ -131,9 +132,9 @@ export default function BasketPage() {
         </Table>
       </TableContainer>
       <Grid container>
-        <Grid item xs={6}></Grid>
+        <Grid item xs={6} />
         <Grid item xs={6}>
-          {/* <BasketSummary /> */}
+          <BasketSummary />
           <Button
             component={Link}
             to={"/checkout"}
