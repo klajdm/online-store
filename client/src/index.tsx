@@ -4,16 +4,17 @@ import "./app/layout/styles.css";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./app/router/Routes";
-import { StoreProvider } from "./app/context/StoreContext";
+import { Provider } from "react-redux";
+import { store } from "./app/store/configureStore";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <StoreProvider>
+    <Provider store={store}>
       <RouterProvider router={router} />
-    </StoreProvider>
+    </Provider>
   </React.StrictMode>
 );
 
