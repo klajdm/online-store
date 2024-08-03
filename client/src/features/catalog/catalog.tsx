@@ -25,7 +25,6 @@ export default function Catalog() {
   const products = useAppSelector(productSelectors.selectAll);
   const {
     productsLoaded,
-    status,
     filtersLoaded,
     brands,
     types,
@@ -42,8 +41,7 @@ export default function Catalog() {
     if (!filtersLoaded) dispatch(fetchFilters());
   }, [filtersLoaded, dispatch]);
 
-  if (status.includes("pending") || !metaData)
-    return <LoadingComponent message="Loading products..." />;
+  if (!filtersLoaded) return <LoadingComponent message="Loading products..." />;
 
   return (
     <Grid container columnSpacing={4}>
