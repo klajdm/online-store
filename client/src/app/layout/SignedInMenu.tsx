@@ -2,6 +2,7 @@ import { Button, Menu, Fade, MenuItem } from "@mui/material";
 import { useState } from "react";
 import { signOut } from "../../features/account/accountSlice";
 import { useAppDispatch, useAppSelector } from "../store/configureStore";
+import { clearBasket } from "../../features/basket/basketSlice";
 
 export default function SignedInMenu() {
   const dispatch = useAppDispatch();
