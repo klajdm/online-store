@@ -8,11 +8,11 @@ import HomePage from "../../features/home/HomePage";
 import App from "../layout/App";
 import ContactPage from "../../features/contact/ContactPage";
 import BasketPage from "../../features/basket/BasketPage";
-import CheckoutPage from "../../features/checkout/CheckoutPage";
 import RequireAuth from "./RequireAuth";
 import Register from "../../features/account/Register";
 import Login from "../../features/account/Login";
 import Orders from "../../features/orders/Orders";
+import CheckoutWrapper from "../../features/checkout/CheckoutWrapper";
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
       {
         element: <RequireAuth />,
         children: [
-          { path: "/checkout", element: <CheckoutPage /> },
+          { path: "/checkout", element: <CheckoutWrapper /> },
           { path: "/orders", element: <Orders /> },
         ],
       },
