@@ -97,7 +97,7 @@ export default function CheckoutPage() {
   async function submitOrder(data: FieldValues) {
     setLoading(true);
     const { nameOnCard, saveAddress, ...shippingAddress } = data;
-    if (!basket?.clientSecret || !stripe || !elements) return; // stripe is not ready;
+    if (!basket?.clientSecret || !stripe || !elements) return;
     try {
       const cardElement = elements.getElement(CardNumberElement);
       const paymentResult = await stripe.confirmCardPayment(
