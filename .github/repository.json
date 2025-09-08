@@ -1,0 +1,14 @@
+{
+  "name": "ReStore",
+  "description": "Full-stack online store application using ASP.NET Core and React.",
+  "homepage": "https://github.com/klajdm/ReStore",
+  "bugs": {
+    "url": "https://github.com/klajdm/ReStore/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klajdm/ReStore.git"
+  },
+  "author": "Klajdi Murataj"
+}
